@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>註冊</title>
 <style>
-h1 {
+.title {
   text-align: center;
-  font-size:50px
-} 
-form{
-font-size:18px
+  font-size:50px;
+  background-color:#8DB580;
 
+} 
+body{
+  background-color:#C2CFB2;
+  }
+form{
+font-size:18px;
+
+text-align:center;
 }
+label{
+text-align:center;
+display:flex;
+}
+button{
+background-color:#7E8987;
+}
+
+.p{
+
+
+
 
 </style>
 </head>
 <body>
 
-<h1>註冊<h1>
+<div class="title">
+<b>註冊</b>
+</div>
+<hr>
+
 <form action="/action_page.php">
-  <label for="name">姓名:</label>
-  <input type="text" id="name" name="name"><br>
+  <label for="name"><p>姓名:</p></label>
+  <input type="text" id="name" name="name">
   <br>
-  <label for="account">帳號:</label>
-  <input type="text" id="account" name="account"><br>
+  <label for="account"><p>帳號:</p></label>
+  <input type="text" id="account" name="account">
   <br>
-  <label for="password">密碼:</label>
-  <input type="password" id="password" name="password"><br>
+  <label for="password"><p>密碼:</p></label>
+  <input type="password" id="password" name="password">
   <br>
-  <label for="email">E-mail:</label>
-  <input type="email" id="email" name="email"><br>
+  <label for="email"><p>E-mail:</p></label>
+  <input type="email" id="email" name="email">
   <br>
-  <label for="gender">男</label>
-  <input type="radio" id="gender" name="M">
-  <label for="gender">女</label>
-  <input type="radio" id="gender" name="F"><br>
+  <label for="gender"><p>性別:</p></label>
+  <input type="radio" id="gender" name="gender">男
+  <input type="radio" id="gender" name="gender">女
   <br>
-  <label for="birth">生日:</label>
-  <input type="date" id="date" name="date"><br>
+  <label for="birth"><p>生日:</p></label>
+  <input type="date" id="date" name="date">
   <br>
-  <label for="color">喜歡的顏色:</label>
-  <input type="color" id="color" name="color"><br>
+  <label for="color"><p>喜歡的顏色:</p></label>
+  <input type="color" id="color" name="color">
   <br>
-  <label for="blood">血型:</label>
-  <select>
+  <label for="blood"><p>血型:</p></label>
+  <select id="blood" name="blood">
   <option value="A">A</option>
   <option value="B">B</option>
   <option value="O">O</option>
   <option value="AB">AB</option>
-  </select><br>
-  
+  </select>
   <br>
-  <label for="tel">電話:</label>
-  <input type="tel" id="tel" name="tel"><br>
+  <label for="tel"><p>電話:</p></label>
+  <input type="tel" id="tel" name="tel">
   <br>
-  <label for="sub">訂閱:</label>
-  <input type="checkbox" id="sub" name="sub"><br>
+  <label for="sub"><p>是否訂閱最新資訊:</p></label>
+  是<input type="checkbox" id="sub" name="sub">
   <br>
-  <label for="file">附件:</label>
-  <input type="file" id="file" name="file"><br>
+  <label for="file"><p>附件:</p></label>
+  <input type="file" id="file" name="file">
   <br>
-  <label for="bio">自我介紹:</label>
-  <input type="textarea" id="bio" name="bio"><br>
+  <label for="bio"><p>自我介紹:</p></label>
+  <input type="textarea" id="bio" name="bio">
   <br>
-  <input type="submit" value="Submit">
+  <br>
+  <br>
+  <button type="submit">送出</button>
 </form>
+
 
 </body>
 </html>
