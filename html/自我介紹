@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.info img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.details {
+    text-align: left;
+    animation: slideLeft 1s ease-in-out;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #777;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">歡迎來到我的網頁</h1>
+        <div class="info">
+            <img src="C:\Users\趙\Desktop\自我介紹\135821.jpg" class="zoom-in">
+            <div class="details slide-left">
+                <h2>趙興華</h2>
+                <p>你好，我是趙興華</p>
+                <p>我來自台灣，出生於台北市，現正就讀於國立金門大學資訊工程學系一年級</p>
+                <p>以下是我的個人網站，可以在這裡了解更多關於我的資訊</p>
+                <ul>
+                    <li><a href="https://www.instagram.com/h.cy_237/">Instagram</a></li>
+                    <li><a href="https://github.com/CH623/wp">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
