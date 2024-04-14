@@ -5,8 +5,12 @@
   text-align: center;
   font-size:50px;
   background-color: rgba(126, 119, 121, 0.6);
-  color:#EAC4C0;
-} 
+  color:white
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: fadeIn 1s ease-in-out forwards;
+  }
+ 
 body{
    background-image: url("pexels-photo-255379.jpeg"); /* 將圖片設置為背景 */
    background-size: cover; /* 調整圖片大小以填滿整個背景 */
@@ -15,8 +19,8 @@ body{
   }
 form{
 font-size:20px;
-text-align:center;
 width: 300px;
+text-align:center;
 }
 label{
 display:flex;
@@ -30,13 +34,24 @@ color:white
 }
 
 div.main{
-color:#EAC4C0;
-font-weight: bold;
 display: flex; /* 使用 Flexbox 佈局 */
 justify-content: center; /* 水平置中 */
-width: 700px; /* 設置容器寬度 */
+width: 500px; /* 設置容器寬度 */
 margin: 0 auto;
 background-color: rgba(126, 119, 121, 0.6);
+opacity: 0;
+transform: translateY(-100%);
+animation: fadeIn 1s ease-in-out forwards;
+ }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
 
 
