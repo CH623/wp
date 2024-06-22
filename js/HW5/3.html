@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+       #movingButton {
+            position: absolute;
+            padding: 10px 20px;
+            background-color: #7E8987;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+
+<button id="movingButton">哈哈點不到我</button>
+
+<script>
+
+
+    const button = document.getElementById('movingButton');
+    let xDirection = 1;
+    let yDirection = 1;
+    let speed = 2;
+
+    function moveButton() {
+        const buttonRect = button.getBoundingClientRect();
+        const bodyRect = document.body.getBoundingClientRect();
+
+        if (buttonRect.right >= bodyRect.right || buttonRect.left <= bodyRect.left) {
+            xDirection *= -1;
+        }
+        if (buttonRect.bottom >= bodyRect.bottom || buttonRect.top <= bodyRect.top) {
+            yDirection *= -1;
+        }
+
+        button.style.left = (button.offsetLeft + speed * xDirection) + 'px';
+        button.style.top = (button.offsetTop + speed * yDirection) + 'px';
+
+        requestAnimationFrame(moveButton);
+    }
+
+    button.style.left = '50px';
+    button.style.top = '50px';
+    requestAnimationFrame(moveButton);
+</script>
+
+</body>
+</html>
