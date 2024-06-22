@@ -19,16 +19,13 @@ let b = document.querySelector('button')
 
 function buttonsetting()
 {
-//獲取尺寸
     let container = b.parentElement;
     let containerHeight = container.clientHeight;
     let containerWidth = container.clientWidth;
 
-//計算按鈕處於至中
     let left = (containerWidth - width)/2;
     let top1 = (containerHeight - height)/2;
-
-//按鈕樣式
+    
     b.style = `position:${position};left:${left};top:${top1};height:${height};width:${width};`
     b.style.fontSize = `${width / 8}px`;
 }
