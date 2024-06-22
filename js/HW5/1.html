@@ -1,0 +1,50 @@
+<html>
+<style>
+    button{
+        font-size: 8px;
+        background: #7E8987;
+        font-weight: bolder;
+        color: white;
+    }
+</style>
+<body>
+<button onclick="job1()">按我嗎？</button>
+<script>
+
+let height = 100
+let width = 100
+let position = 'absolute'
+
+let b = document.querySelector('button')
+
+function buttonsetting()
+{
+//獲取尺寸
+    let container = b.parentElement;
+    let containerHeight = container.clientHeight;
+    let containerWidth = container.clientWidth;
+
+//計算按鈕處於至中
+    let left = (containerWidth - width)/2;
+    let top1 = (containerHeight - height)/2;
+
+//按鈕樣式
+    b.style = `position:${position};left:${left};top:${top1};height:${height};width:${width};`
+    b.style.fontSize = `${width / 8}px`;
+}
+
+buttonsetting();
+
+function job1() 
+{
+    width += 10
+    height += 10
+    
+    buttonsetting();
+
+    b.textContent = '不要按我啦'
+}
+
+</script>
+</body>
+</html>
