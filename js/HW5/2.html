@@ -1,0 +1,31 @@
+<html>
+<style>
+    button{
+        font-size: 20px;
+        background: #7E8987;
+        font-weight: bolder;
+        color: white;
+    }
+</style>
+<body>
+<button onclick="job1()">喂</button>
+<script>
+    let left = 100
+    
+    let b = document.querySelector('button')
+    b.style.position = 'absolute'
+    b.style.left = left
+
+    function job1()
+    {
+        left = left + 10
+     
+        b.style.left = left
+
+        b.textContent = '按什麼按啦'
+    }
+
+
+</script>
+</body>
+</html>
