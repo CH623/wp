@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #D4AFB9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>J-POP鑑賞</h1>
+  <p>講的好聽其實只是丟我自己愛的歌</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.youtube.com/@Vaundy">Vaundy</a>
+  <a href="https://www.youtube.com/@iamtail/videos">Taichi Mukai</a>
+  <a href="https://www.youtube.com/@SnowMan.official.9">Snow Man</a>
+  <a href="https://www.youtube.com/@amazarashiSMEJ">amazarashi</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>簡史</h2>
+    <p><b>歌謠曲、演歌</b><br>
+    （1920年 - 1955年）</p>
+    <p><b>搖滾潮</b><br>
+    （1955年 - 1970年）</p>
+    <p><b>新音樂</b><br>
+    （1970年 - 1980年）</p>
+    <p><b>城市音樂</b><br>
+    （1980年 - 1990年）</p>
+    <p><b>市場巔峰</b><br>
+    （1990年 - 1999年）</p>
+    <p><b>新世紀，歌姬時代</b><br>
+    （1999年 - 2003年）</p>
+    <p><b>多樣化</b><br>
+    （2003年 - 2009年）</p>
+    <p><b>偶像戰國時代</b><br>
+    （2010年 - 2019年）</p>
+    <p><b>音樂串流時代</b><br>
+    （2019年 - 現在）</p>
+
+
+  </div>
+  
+  <div class="column middle">
+    <h2>簡介</h2>
+    <p>日本流行音樂、又稱J-POP、是指受西方流行音樂影響而出現的流行歌謠曲。名稱由1988年開播的音樂專門電台J-WAVE命名，是當時為定義日本出產的流行音樂而創造出來的和製英語用詞；其後在日本被廣泛地用來指受西方影響的現代音樂流派，主要包括大眾流行、R&B、靈魂樂、搖滾樂、舞曲、嘻哈、流行電音等。此外，也有日本獨自發展出來的J-POP分支，如澀谷系和City pop。根據國際唱片業協會統計，直至2023年以J-POP爲主的日本音樂產業是世界第二大的音樂市場（包括實體唱片、數位音樂、音樂串流、版稅）。與其他地區的音樂市場類似，日本的實體唱片銷量減少，而音樂串流及數位音樂則逐漸成爲市場增長的主要動力。</p>
+  </div>
+  
+  <div class="column side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+  
+</body>
+</html>
