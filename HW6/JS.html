@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 100px;
+  height: 100px;
+  background: #FAE8EB;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 2s;
+}
+
+#myDIV:hover {
+  width: 200px;
+  height: 600px;
+}
+</style>
+</head>
+<body>
+
+<p>介紹欄</p>
+
+<div id="myDIV">
+<a href="https://github.com/CH623/wp">● Github</a><br>
+        <a href="https://www.youtube.com/">● YouTube</a><br>
+        <a href="https://www.youtube.com/watch?v=qy8YGQurnEI">聽歌嗎</a><br>
+        <a href="https://www.youtube.com/watch?v=QhN2jXtMhrM">好聽喔</a>
+</div>
+
+<script>
+// Code for Safari 3.1 to 6.0
+document.getElementById("myDIV").addEventListener("webkitTransitionEnd", myFunction);
+
+// Standard syntax
+document.getElementById("myDIV").addEventListener("transitionend", myFunction);
+
+}
+</script>
+
+</body>
+</html>
