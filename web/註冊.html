@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<title>註冊</title>
+<style>
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #DDD;
+    width: 100%;
+    margin: 30px 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .title {
+    font-size: 25px;
+    font-weight: bolder;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .chosen {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    color: white;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  a:hover {
+    background-color: #FAE8EB;
+    font-size: 15px;
+    color: black;
+  }
+
+/*  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Adjust the top position to align with the link 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .dropdown a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+
+  .dropdown a:hover {
+    color: #fa0;
+  }*/
+
+  .title2 {
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(126, 119, 121, 0.6);
+    color: #EAC4C0;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeIn 1s ease-in-out forwards;
+    z-index: 1;
+    position: relative
+  }
+
+  body {
+    background-color: #333;
+  }
+
+  form {
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+    position: relative
+  }
+
+  label {
+    display: flex;
+    color: #EAC4C0;
+    font-weight: bold;
+    z-index: 1;
+    position: relative
+  }
+
+  button {
+    background-color: #7E8987;
+    font-size: 15px;
+    color: white;
+  }
+
+  div.main {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgba(126, 119, 121, 0.6);
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-80%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="nav">
+  <div class="title">
+    <b>Welcome To My World</b>
+  </div>
+  <div class="chosen">
+    <p>
+      <a href="C:\Users\趙\Desktop\網頁\新增資料夾\final.html">首頁</a>
+      <a href="https://www.youtube.com/watch?v=H0S28p3eoWs">猜你想聽</a>
+      <a href="C:\Users\趙\Desktop\網頁\新增資料夾\自我介紹\自我介紹.html">關於我們</a>
+      <a href="">註冊</a>
+    </p>
+    <!-- <div class="dropdown" id="dropdownMenu">
+      <a href="">鏈接1</a>
+      <a href="">鏈接2</a>
+      <a href="">鏈接3</a>
+      <a href="">鏈接4</a>
+    </div> -->
+  </div>
+</div>
+
+<!-- <script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById('dropdownMenu');
+    var siteMapLink = document.getElementById('siteMapLink');
+    var rect = siteMapLink.getBoundingClientRect();
+
+    dropdown.style.left = rect.left + 'px';
+    dropdown.style.top = (rect.bottom + window.scrollY) + 'px';
+
+    if (dropdown.style.display === 'block') {
+      dropdown.style.display = 'none';
+    } else {
+      dropdown.style.display = 'block';
+    }
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.chosen a')) {
+      var dropdowns = document.getElementsByClassName("dropdown");
+      for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.style.display === 'block') {
+          openDropdown.style.display = 'none';
+        }
+      }
+    }
+  }
+</script> -->
+
+<!-- <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById('dropdownMenu');
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+            } else {
+                dropdown.style.display = 'block';
+            }
+        }
+
+        // 点击页面其他区域时隐藏下拉菜单
+        window.onclick = function(event) {
+            if (!event.target.matches('.chosen a')) {
+                var dropdowns = document.getElementsByClassName("dropdown");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        }
+    </script> -->
+
+<div class="title2">
+  <b>註冊</b>
+</div>
+<hr>
+<div class="main">
+  <form action="/action_page.php">
+    <label for="name"><p>姓名:</p></label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="account"><p>帳號:</p></label>
+    <input type="text" id="account" name="account">
+    <br>
+    <label for="password"><p>密碼:</p></label>
+    <input type="password" id="password" name="password">
+    <br>
+    <label for="email"><p>E-mail:</p></label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="gender"><p>性別:</p></label>
+    <input type="radio" id="gender" name="gender">男
+    <input type="radio" id="gender" name="gender">女
+    <br>
+    <label for="birth"><p>生日:</p></label>
+    <input type="date" id="date" name="date">
+    <br>
+    <label for="color"><p>喜歡的顏色:</p></label>
+    <input type="color" id="color" name="color">
+    <br>
+    <label for="blood"><p>血型:</p></label>
+    <select id="blood" name="blood">
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="O">O</option>
+      <option value="AB">AB</option>
+    </select>
+    <br>
+    <label for="tel"><p>電話:</p></label>
+    <input type="tel" id="tel" name="tel">
+    <br>
+    <label for="sub"><p>是否訂閱最新資訊:</p></label>
+    是<input type="checkbox" id="sub" name="sub">
+    <br>
+    <label for="file"><p>附件:</p></label>
+    <input type="file" id="file" name="file">
+    <br>
+    <label for="bio"><p>自我介紹:</p></label>
+    <textarea id="About" name="About" rows="5" cols="30" placeholder="請輸入..."></textarea>
+    <br>
+    <br>
+    <br>
+    <button type="submit">送出</button>
+  </form>
+</div>
+</body>
+</html>
